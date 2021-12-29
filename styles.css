@@ -1,0 +1,140 @@
+body{
+  margin:0;
+  height: 100vh;
+  background: #090b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 87%;
+  max-width: 1270px;
+  min-height: 450px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1b1938;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.image-div{
+  background-color: #aa5cdb;
+
+}
+.header-image{
+  width: 100%;
+  margin-bottom:-4px;
+  opacity: 0.5;
+
+}
+
+.image2{
+  display: none;
+}
+
+.data{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-main, .paragraph-main, .figures{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.heading-main{
+  font-size: 28px;
+  margin-top:2.5rem;
+}
+
+.paragraph-main{
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.figures{
+line-height: 0.5;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-bottom:2rem;
+gap: 0.7rem;
+}
+
+.description{
+  font-size: 13px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.violet{
+  color:#aa5cdb;
+}
+
+.white{
+color:  #ffffff;
+}
+.white2{
+  color: rgba(255, 255, 255, 0.75);
+}
+.white3{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width:500px){
+  .figures{
+    flex-direction: row;
+    height: auto;
+    margin: 0 15% 1rem 15%;
+  }
+}
+@media(min-width: 733px){
+  .container{
+    flex-direction: row;
+    text-align: left;
+    max-height: 450px;
+  }
+  .image-div{
+    order:1;
+    flex-basis: 100%;
+    overflow: hidden;
+    margin-left: 1rem;
+    }
+  .header-image{
+    min-height: 450px;
+    width: auto;
+  }
+  .image1{
+    display: none;
+  }
+  .image2{
+    display: inline-flex;
+  }
+  .data{
+    flex-basis: 100%;
+    gap:2rem;
+  }
+
+  .heading-main{
+    font-size: 36px;
+    margin: 0 5.5rem 0 4.5rem;
+    padding-top: 1rem;
+  }
+  .paragraph-main{
+    margin-left: 4.5rem;
+    margin-right: 7rem;
+    padding-top: 1rem;
+
+  }
+  .figures{
+  margin: 0 7rem 0 4.5rem;
+  gap: 1rem;
+  padding-top: 1rem;
+  }
+}
